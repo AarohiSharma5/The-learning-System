@@ -376,7 +376,557 @@ map<char, vector<string>> createCompletePatternLibrary()
         {'9', {" *** ", "*   *", " ****", "    *", " *** "}},
         {' ', {"     ", "     ", "     ", "     ", "     "}},
         {'!', {"  *  ", "  *  ", "  *  ", "     ", "  *  "}},
-        {'?', {" *** ", "    *", "  ** ", "     ", "  *  "}}};
+        {'?', {" *** ", "    *", "  ** ", "     ", "  *  "}},
+        {'_', {"     ", "     ", "     ", "     ", "*****"}}};
+}
+
+void fillInTheBlanks(){
+    map<char, vector<string>> patternLibrary = createCompletePatternLibrary();
+    int count = 0;
+
+    string answer;
+
+    cout << "Q1)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tA__LE", patternLibrary, "\033[91m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letter?\n";
+
+    cin.ignore();
+    getline(cin, answer);
+
+    if (answer == "PP")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q2)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tBA__", patternLibrary, "\033[92m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "LL")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q3)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tC_T", patternLibrary, "\033[93m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "A")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q4)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\t_OG", patternLibrary, "\033[94m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "D")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q5)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tELE____T", patternLibrary, "\033[95m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "PHAN")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q6)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tF__H", patternLibrary, "\033[96m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "IS")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q7)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tGR___S", patternLibrary, "\033[91m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "APE")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q8)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\t__RSE", patternLibrary, "\033[92m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "HO")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q9)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\t___POT", patternLibrary, "\033[93m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "INK")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q10)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tJ_G", patternLibrary, "\033[94m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout<<"What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "U")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q11)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tK__E", patternLibrary, "\033[95m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "IT")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q12)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tLI__", patternLibrary, "\033[96m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "ON")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q13)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tMON___", patternLibrary, "\033[91m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "KEY")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q14)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tN__T", patternLibrary, "\033[92m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "ES")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q15)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tO_L", patternLibrary, "\033[93m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "W")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q16)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tP___OT", patternLibrary, "\033[94m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "ARR")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q17)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tQU__N", patternLibrary, "\033[95m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "EE")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q18)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tR_T", patternLibrary, "\033[96m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "A")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q19)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tS_N", patternLibrary, "\033[91m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "U")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q20)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\t____PHONE", patternLibrary, "\033[92m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout << "What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "TELE")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q21)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tUMBR____", patternLibrary, "\033[93m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout<<"What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "ELLA")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q22)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tV_N", patternLibrary, "\033[94m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout<<"What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "A")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q23)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tW__CH", patternLibrary, "\033[95m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout<<"What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "AT")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q24)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tX__S", patternLibrary, "\033[96m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout<<"What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "MA")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q25)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tY_K", patternLibrary, "\033[91m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout<<"What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "A")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "Q26)\n";
+
+    printColoredPattern("\t\t\t\t\t\t\t\t\tZ__RA", patternLibrary, "\033[92m");
+    cout << "\n\n\n"
+         << endl;
+
+    cout<<"What are the missing letters?\n";
+
+    getline(cin, answer);
+
+    if (answer == "EB")
+    {
+        cout << "CORRECT :)\n";
+        count++;
+    }
+    else
+    {
+        cout << "WRONG :(\n";
+    }
+
+    cout << "\n\n\n\n\nWELL DONE YOU PERFOREMED THE TEST!!!\n\n\n\n\n";
+
+    cout << "YOUR SCORE IS ---------->\n\n\n";
+
+    if (count >= 21)
+    {
+        cout << "Excellent!!!" << endl
+             << "You scored : " << count;
+    }
+    else if (count >= 15 && count < 21)
+    {
+        cout << "GOOD JOB!!!" << endl
+             << "You scored : " << count;
+    }
+
+    else if (count < 15)
+    {
+        cout << "Your score is: " << count << endl;
+    }
+
 }
 
 void jumbledWords()
@@ -879,7 +1429,6 @@ void jumbledWords()
 
     cout << "What is the word?\n";
 
-    cin.ignore();
     getline(cin, answer);
 
     if (answer == "XMAS")
@@ -1407,7 +1956,22 @@ int main()
                 cout << "===========================================================================================";
                 cout << "\n\n\n\n";
 
-                jumbledWords();
+                cout<<"Do you want to:\n";
+                cout<<"\t1. Guess the word from jumbled letters?\n";
+                cout<<"\t2. Fill in the blank with missing letters of the word?\n";
+
+                int ch2;
+                cin>>ch2;
+
+                switch(ch2){
+                    case 1:
+                    jumbledWords();
+                    break;
+
+                    case 2:
+                    fillInTheBlanks();
+                    break;
+                }
                 break;
             }
             break;
